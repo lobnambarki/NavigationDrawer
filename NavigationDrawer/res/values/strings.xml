@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CPG</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+       <string name="please_enter_username_and_password">Please enter Username and Password</string>
+      <string name="title_activity_google">Google_Map</string>
+    <string name="title_activity_accueil">Accueil</string>
+      <string name="title_activity_rapports">Rapports</string>
+      <string name="action_example"></string>
+
+    
+    
+    <string-array name="Meenu">
+        <item>Accueil</item>
+        <item>Google Map</item>
+        <item>Rapports des analyses</item>
+        <item>Parametres</item>
+   
+    </string-array>
+   
+      <array name="nav_drawer_icons">
+        <item>@drawable/ic_accueil</item>
+        <item>@drawable/ic_google_map</item>
+        <item>@drawable/ic_file</item>
+       
+    </array>
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+</resources>
