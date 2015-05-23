@@ -1,19 +1,21 @@
 package com.example.navigationdrawer;
 
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.widget.DrawerLayout;
 import android.widget.Toast;
+
+
+
 
 @SuppressLint("SetJavaScriptEnabled")
 public class Accueil extends ActionBarActivity implements
@@ -38,12 +40,14 @@ private CharSequence mTitle;
 		setContentView(R.layout.accueil);
 
 		mNavigationDrawerFragment = (NavDrawerAccueil) getSupportFragmentManager()
-				.findFragmentById(R.id.drawer_list);
+				.findFragmentById(R.id.navigation_drawer);
 		mTitle = getTitle();
-
+		
+		DrawerLayout d = (DrawerLayout) findViewById(R.id.drawer_layout) ;
 		// Set up the drawer.
-		mNavigationDrawerFragment.setUp(R.id.drawer_list,
-				(DrawerLayout) findViewById(R.id.drawer_layout));
+		
+		mNavigationDrawerFragment.setUp(R.id.navigation_drawer,d
+				);
 		
 
 		
