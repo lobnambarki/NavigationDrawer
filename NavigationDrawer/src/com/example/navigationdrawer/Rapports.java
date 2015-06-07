@@ -75,14 +75,14 @@ import android.widget.Toast;
 		{
 
 			super.onCreate(savedInstanceState);
-			setContentView(R.layout.login);
+			setContentView(R.layout.rapports);
 					mNavigationDrawerFragment = (NavDrawerRapports) getSupportFragmentManager()
-					.findFragmentById(R.id.drawer_list);
+					.findFragmentById(R.id.navigation_drawer);
 			mTitle = getTitle();
+			DrawerLayout d = (DrawerLayout) findViewById(R.id.drawer_layout) ;
 
 			// Set up the drawer.
-			mNavigationDrawerFragment.setUp(R.id.drawer_list,
-					(DrawerLayout) findViewById(R.id.drawer_layout));
+			mNavigationDrawerFragment.setUp(R.id.navigation_drawer,d);
 
 			// initialisation d'une progress bar
 			progressDialog = new ProgressDialog(this);
